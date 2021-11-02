@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+
+    <!-----main css---->
+    <link rel="stylesheet" href="./survey_form.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <!------------------------------------Form heading------------------------------------------------>
+      <p id="description">A Responsive Survey Form</p>
+      <!----------------------------------End of Form heading------------------------------------------------>
+      <!--------------------------------------Form-------------------------------------------------------------------------->
+      <div class="main-content">
+        <div class="form-content">
+          <!-------------------------Feedback intro-------------------------------------------------------------------------------------------->
+          <div id="feedback_intro">
+            Your Feedback matters to us!! <br />
+            Please help us improve😊
+          </div>
+          <br />
+          <!-------------------------End of Feedback intro-------------------------------------------------------------------------------------------->
+          <form id="survey-form">
+            <!-------------------------------inputs + dropdowns---------------------------->
+            <label for="name" id="name-label"
+              >Name<span id="name_error" style="padding: 70px"> </span
+            ></label>
+            <input
+              id="name"
+              type="text"
+              required
+              placeholder="Enter your name"
+            />
+            <label for="email" id="email-label"
+              >Email<span id="email_error" style="padding: 70px"></span
+            ></label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="Enter your email"
+            />
+            <label for="dropdown"
+              >Which option best describes your Current Role?</label
+            >
+            <select id="dropdown">
+              <option value="Student">Student</option>
+              <option value="full-time-learner">Full time job</option>
+              <option value="part-time-job">Part time job</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="course">Which Course have you enrolled?</label>
+            <select id="course">
+              <option value="FSWD">Full Stack Web Development</option>
+              <option value="DS">Data Science</option>
+              <option value="DM">Digital Marketing</option>
+              <option value="CW">Content Writing</option>
+            </select>
+            <!-----------------------------End of inputs + dropdowns---------------------------->
+            <!------------------------------------Fieldsets-------------------------------->
+            <fieldset class="f1">
+              <legend>
+                How satisfied are you with the current Instructor?
+              </legend>
+              <input
+                type="radio"
+                name="instructor"
+                checked
+                id="Very-Satisfied"
+                value="Very-Satisfied"
+              /><label for="Very-Satisfied">Very Satisfied</label><br />
+              <input
+                type="radio"
+                name="instructor"
+                id="Satisfied"
+                value="Satisfied"
+                checked
+              /><label for="Satisfied">Satisfied</label><br />
+              <input
+                type="radio"
+                name="instructor"
+                id="Not-Satisfied"
+                value="Not-Satisfied"
+              /><label for="Not-Satisfied">Not Satisfied</label><br />
+            </fieldset>
+            <br />
+
+            <fieldset class="f1">
+              <legend id="improve">
+                What improvement would you like with the Course?
+              </legend>
+              <input
+                type="checkbox"
+                id="video-quality"
+                name="video-quality"
+                value="video-quality"
+              />
+              <label for="video-quality">Video quality</label><br />
+              <input
+                type="checkbox"
+                id="content-quality"
+                name="content-quality"
+                value="content-quality"
+              />
+              <label for="content-quality">Content quality</label><br />
+              <input
+                type="checkbox"
+                id="query-resolving-time"
+                name="query-resolving-time"
+                value="query-resolving-time"
+              />
+              <label for="query-resolving-time">Query resolving time</label
+              ><br />
+            </fieldset>
+            <br />
+
+            <fieldset class="f1">
+              <legend>Are you willing to enroll for another Course?</legend>
+              <input
+                type="radio"
+                name="another-enroll"
+                checked
+                id="Definitely-Yes"
+                value="Definitely-Yes"
+              /><label for="Definitely-Yes">Definitely, Yes</label><br />
+              <input
+                type="radio"
+                name="another-enroll"
+                id="Probably-Yes"
+                value="Probably-Yes"
+                checked
+              /><label for="Probably-Yes">Probably, Yes</label><br />
+              <input
+                type="radio"
+                name="another-enroll"
+                id="Definitely-No"
+                value="Definitely-No"
+              /><label for="Definitely-No">Definitely, No</label><br />
+              <input
+                type="radio"
+                name="another-enroll"
+                id="Probably-No"
+                value="Probably-No"
+              /><label for="Probably-No">Probably, No</label><br />
+              <input
+                type="radio"
+                name="another-enroll"
+                id="Cant-Say"
+                value="Cant-Say"
+              /><label for="Cant-Say">Can't Say</label><br />
+            </fieldset>
+            <br />
+
+            <fieldset class="f1">
+              <legend>Would you recommend our Course to your Friends?</legend>
+              <input
+                type="radio"
+                name="action"
+                checked
+                id="yes"
+                value="yes"
+              /><label for="yes">Yes</label><br />
+              <input type="radio" name="action" id="no" value="no" /><label
+                for="no"
+                >No</label
+              ><br />
+            </fieldset>
+            <br />
+            <!----------------------------End of field sets------------------------------------->
+            <!---------------------------Star component------------------------------>
+            <label for="number" id="number-label">How would you rate us?</label>
+            <div class="star-rating">
+              <input type="radio" id="5-stars" name="rating" value="5" />
+              <label for="5-stars" class="star">&#9733;</label>
+              <input type="radio" id="4-stars" name="rating" value="4" />
+              <label for="4-stars" class="star">&#9733;</label>
+              <input type="radio" id="3-stars" name="rating" value="3" />
+              <label for="3-stars" class="star">&#9733;</label>
+              <input type="radio" id="2-stars" name="rating" value="2" />
+              <label for="2-stars" class="star">&#9733;</label>
+              <input type="radio" id="1-star" name="rating" value="1" />
+              <label for="1-star" class="star">&#9733;</label>
+            </div>
+            <!-------------------------End of Star component------------------------------>
+            <!--------------------------Comment component--------------------------------------------->
+            <label for="comment">Feel free to comment❤️</label>
+            <textarea rows="4" cols="50" id="comment"></textarea>
+            <!-------------------------End of Comment component--------------------------------------------->
+            <!-------------------------------Submit Component------------------------------------------------------------->
+            <button type="submit" id="submit" onclick="errorMessage()">
+              Submit
+            </button>
+            <!----------------------------End of Submit Component------------------------------------------------------------->
+          </form>
+        </div>
+      </div>
+      <!------------------------------------End of Form------------------------------------------------>
+    </div>
+    <!-------main script------->
+    <script src="./survey_form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+/* The styles are in order 
+of the appearance of their 
+respective components in the html file*/
+
+body {
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  background-color: #f9f9f9;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #faeee0;
+  overflow-y: scroll;
+  font-size: 24px;
+}
+
+.main>h1,
+.main>p {
+  text-align: center;
+  font-family: 35px;
+  z-index: 2;
+  position: relative;
+}
+
+#description {
+  color: #230242;
+  text-align: center;
+}
+
+.main-content {
+  background-color: #0779e4;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px -1px 10px 5px lightyellow;
+  color: inherit;
+}
+
+#feedback_intro {
+  font-size: 30px;
+  color: rgb(238, 235, 48);
+}
+
+#name,
+#email,
+#number,
+#comment {
+  display: block;
+  width: 97%;
+  height: 30px;
+  padding: 5px 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 37px;
+}
+
+#course,
+#dropdown {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 4px 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="dropdown"],
+label[for="comment"],
+label[for="course"] {
+  margin-bottom: 11px;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff8e5;
+}
+
+#video-quality,
+#content-quality,
+#query-resolving-time,
+fieldset input {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+fieldset.f1 {
+  border: 2px solid #342ead;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-left: -20px;
+  width: 100%;
+  margin-top: 7px;
+  padding-top: 5px;
+}
+
+legend {
+  color: #fff8e5;
+}
+
+label[for="yes"],
+label[for="no"],
+label[for="maybe"],
+label[for="video-quality"],
+label[for="content-quality"],
+label[for="query-resolving-time"],
+label[for="Not-Satisfied"],
+label[for="Satisfied"],
+label[for="Very-Satisfied"],
+label[for="Definitely-Yes"],
+label[for="Definitely-No"],
+label[for="Probably-Yes"],
+label[for="Probably-No"],
+label[for="Cant-Say"] {
+  color: #150050;
+}
+
+#improve {
+  color: #fff8e5;
+}
+
+#comment {
+  min-height: 150px;
+}
+
+label[for="comment"] {
+  margin-top: 30px;
+  color: #fff8e5;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #37af65;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 0;
+  color: #fff8e5;
+  font-size: 20px;
+}
+
+/*star component*/
+label[for="number"] {
+  margin-bottom: 11px;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff8e5;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  padding: 0 0.2em;
+  text-align: center;
+  width: 7.5em;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  padding-right: 17px;
+  padding-left: 10px;
+}
+
+.star-rating :checked~label {
+  color: #f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+  color: #fc0;
+}
